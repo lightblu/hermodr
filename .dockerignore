@@ -1,0 +1,6 @@
+Dockerfile
+Dockerfile.release
+.cabal-sandbox
+Makefile
+release
+dist
