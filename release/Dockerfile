@@ -1,5 +1,7 @@
-FROM alpine:3.3
+FROM frolvlad/alpine-glibc:alpine-3.4
 MAINTAINER Bjoern Lichtblau <lightblu@github>
+
+RUN apk --update add --no-cache gmp && rm -rf /tmp/* /var/cache/apk/*
 
 # Add backend files
 COPY ./hermodr /usr/local/bin/hermodr
